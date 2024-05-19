@@ -31,12 +31,12 @@ class TestNationalParks:
         np = NationalPark("under the sea")
 
         # comment out the next two lines if using Exceptions
-        np.name = "over the sea"
-        assert np.name == "under the sea"
+        # np.name = "over the sea"
+        # assert np.name == "under the sea"
 
         # uncomment the next two lines if using Exceptions
-        # with pytest.raises(Exception):
-        #     np.name = "over the sea"
+        with pytest.raises(Exception):
+            np.name = "over the sea"
 
     def test_has_many_trips(self):
         """national_park has many trips"""
